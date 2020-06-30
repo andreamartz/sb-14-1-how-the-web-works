@@ -35,11 +35,19 @@ In your own terms, define the following terms:
 
 - What are two HTTP verbs and how are they different?
 
-  _A: GET and POST are two HTTP verbs. POST requests_
+  _A: GET and POST are two HTTP verbs. GET requests do not change server data; they are just requests to get information (a web page, search results). POST requests, on the other hand, do have side effects, such as updating a database (e.g., posting a message to social media)._
 
 - What is an HTTP request?
+
+  _A: An HTTP request is a request made by our browser according to the standardized Hypertext Transfer Protocol. It includes things like _
+
 - What is an HTTP response?
+
+  _A: An HTTP response is what comes back from the server when an HTTP request is sent._
+
 - What is an HTTP header? Give a couple examples of request and response headers you have seen.
+  _A: _
+
 - What are the processes that happen when you type “<http://somesite.com/some/page.html>” into a browser?
 
   _A: The browser sends the hostname to a DNS server to get the IP address (if the IP address is not already available in the local cache). Then it makes a request to the server at the IP address to get the requested content. The request contains:_
@@ -70,9 +78,21 @@ _Here is the rendered page at localhost:8000:_
 
 Build a very simple HTML form that uses the GET method (it can use the same page URL for the action) when the form is submitted.
 
+See index.html:
+
+![form with get method](form-with-get-method.png)
+
 Add a field or two to the form and, after submitting it, explore in Chrome Developer tools how you can view the request and response headers.
 
-Edit the page to change the form type to POST, refresh in the browser and re-submit. Do you still see the field in the query string? Explore in Chrome how you can view the request and response headers, as well as the form data.
+![View request and response headers](view-request-response-headers-get.png)
+
+Edit the page to change the form type to POST, refresh in the browser and re-submit. Do you still see the field in the query string?
+
+-A: No\_
+
+Explore in Chrome how you can view the request and response headers, as well as the form data.
+
+![View request and response headers and form data](view-request-response-headers-post.png)
 
 ## Part Four: Explore the URL API
 
