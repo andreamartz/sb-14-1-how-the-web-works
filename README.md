@@ -8,12 +8,32 @@ In your own terms, define the following terms:
 
 - What is HTTP?
 
+  A: HTTP stands for hypertext transfer protocol.
+
 - What is a URL?
+  A: THis is often called a "web address." URL stands for universal resource locator.
+
 - Describe the different parts of a URL.
+
+  _A: It contains information about the protocol, hostname, resource, and query. THere is also a default port assigned if we don't specify one._
+
+  - _hostname:_
+  - _resource: what content we're looking for_
+  - _query: this part is OPTIONAL and provides additional information like search terms, information from a form, etc._
+
 - What is an IP?
+
+  _A: IP stands for Internet Protocol._
+
 - What is DNS?
+
+  _A: DNS stands for Domain Name System. It works like an old school phone book for the **web** where the **hostname** we type into the address bar gets turned into an IP address that the computer can use. It can also do reverse lookups._
+
 - What is a query string?
 - What are two HTTP verbs and how are they different?
+
+  _A: GET and POST are two HTTP verbs. POST requests_
+
 - What is an HTTP request?
 - What is an HTTP response?
 - What is an HTTP header? Give a couple examples of request and response headers you have seen.
