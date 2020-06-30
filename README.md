@@ -17,8 +17,8 @@ In your own terms, define the following terms:
 
   _A: It contains information about the protocol, hostname, resource, and query. THere is also a default port assigned if we don't specify one._
 
-  - _hostname:_
-  - _resource: what content we're looking for_
+  - _hostname: this is the human-readable name that the DNS server turns into an IP address_
+  - _resource: specifies the content we're looking for on the site_
   - _query: this part is OPTIONAL and provides additional information like search terms, information from a form, etc._
 
 - What is an IP?
@@ -30,6 +30,9 @@ In your own terms, define the following terms:
   _A: DNS stands for Domain Name System. It works like an old school phone book for the **web** where the **hostname** we type into the address bar gets turned into an IP address that the computer can use. It can also do reverse lookups._
 
 - What is a query string?
+
+  _A: A query string is part of a URL. It provides additional information, and is optional. It takes the form of key-value pairs. Example: typing a search term tells the computer exactly what part of the resource we're looking for. Or it might tell how we want data sorted._
+
 - What are two HTTP verbs and how are they different?
 
   _A: GET and POST are two HTTP verbs. POST requests_
@@ -39,11 +42,29 @@ In your own terms, define the following terms:
 - What is an HTTP header? Give a couple examples of request and response headers you have seen.
 - What are the processes that happen when you type “<http://somesite.com/some/page.html>” into a browser?
 
+  _A: The browser sends the hostname to a DNS server to get the IP address (if the IP address is not already available in the local cache). Then it makes a request to the server at the IP address to get the requested content. The request contains:_
+
+  - _a method (GET, POST, etc.)_
+  - _an HTTP version (almost always 1.1)_
+
 ## Part Two: Practice Tools
 
 1. Using curl, make a GET request to the _icanhazdadjoke.com_ API to find all jokes involving the word “pirate”
+
 2. Use dig to find what the IP address is for _icanhazdadjoke.com_
+
+_A: I typed 'dig icanhazdadjoke.com' into the terminal. There were three results, all with status code 300:_
+
+- _104.27.178.209,_
+- _104.27.179.209, and_
+- _172.67.153.24_
+
 3. Make a simple web page and serve it using python3 -m http.server. Visit the page in a browser.
+
+_A: Here is the code I typed in:_
+![Start a Python3 server](start-a-python3-server.png)
+_Here is the rendered page at localhost:8000:_
+![Rendered page on Python3 server](rendered-page-on-python3-server.png)
 
 ## Part Three: Explore Dev Tools
 
