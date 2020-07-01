@@ -59,6 +59,8 @@ In your own terms, define the following terms:
 
 1. Using curl, make a GET request to the _icanhazdadjoke.com_ API to find all jokes involving the word “pirate”
 
+![Pirate jokes](pirate-jokes.png)
+
 2. Use dig to find what the IP address is for _icanhazdadjoke.com_
 
 _A: I typed 'dig icanhazdadjoke.com' into the terminal. There were three results, all with status code 300:_
@@ -88,7 +90,7 @@ Add a field or two to the form and, after submitting it, explore in Chrome Devel
 
 Edit the page to change the form type to POST, refresh in the browser and re-submit. Do you still see the field in the query string?
 
--A: No\_
+_A: No_
 
 Explore in Chrome how you can view the request and response headers, as well as the form data.
 
