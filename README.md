@@ -8,22 +8,19 @@ In your own terms, define the following terms:
 
 - What is HTTP?
 
-  A: HTTP stands for hypertext transfer protocol.
+  _A: HTTP stands for hypertext transfer protocol. It is a set of rules that govern how data is sent to or retrieved from a server._
 
 - What is a URL?
-  A: THis is often called a "web address." URL stands for universal resource locator.
+  _A: This is often called a "web address," because it provides location information for a resource. URL stands for universal resource locator._
 
 - Describe the different parts of a URL.
 
-  _A: It contains information about the protocol, hostname, resource, and query. THere is also a default port assigned if we don't specify one._
+  _A: It contains information about the protocol, hostname, resource, and query. There is also a default port assigned if we don't specify one._
 
+  - \_protocol:
   - _hostname: this is the human-readable name that the DNS server turns into an IP address_
   - _resource: specifies the content we're looking for on the site_
   - _query: this part is OPTIONAL and provides additional information like search terms, information from a form, etc._
-
-- What is an IP?
-
-  _A: IP stands for Internet Protocol._
 
 - What is DNS?
 
@@ -31,7 +28,7 @@ In your own terms, define the following terms:
 
 - What is a query string?
 
-  _A: A query string is part of a URL. It provides additional information, and is optional. It takes the form of key-value pairs. Example: typing a search term tells the computer exactly what part of the resource we're looking for. Or it might tell how we want data sorted._
+  _A: A query string is part of a URL and consists of key-value pairs that provide additional information to a get request. Example: typing a search term tells the computer exactly what part of the resource we're looking for. Or it might tell how we want data sorted._
 
 - What are two HTTP verbs and how are they different?
 
@@ -39,21 +36,25 @@ In your own terms, define the following terms:
 
 - What is an HTTP request?
 
-  _A: An HTTP request is a request made by our browser according to the standardized Hypertext Transfer Protocol. It includes things like _
+  _A: An HTTP request is a request made by our browser according to the Hypertext Transfer Protocol. Using HTTP requests, we can retrieve information, such as html from Yahoo Finance. _
 
 - What is an HTTP response?
 
   _A: An HTTP response is what comes back from the server when an HTTP request is sent._
 
 - What is an HTTP header? Give a couple examples of request and response headers you have seen.
-  _A: _
+  _A: An HTTP header provides additional inforamtion about the request/response._
+
+  - _Request header examples: Accept, Host, User-Agent, Accept-Language, Referer, Cache-Control_
+  - _Response header examples: Connection, Date, Content-Type, Last-Modified, Cashe-Control_
 
 - What are the processes that happen when you type “<http://somesite.com/some/page.html>” into a browser?
 
-  _A: The browser sends the hostname to a DNS server to get the IP address (if the IP address is not already available in the local cache). Then it makes a request to the server at the IP address to get the requested content. The request contains:_
-
-  - _a method (GET, POST, etc.)_
-  - _an HTTP version (almost always 1.1)_
+  _A:_
+  _1. The browser sends the hostname to a DNS server to get the IP address (if the IP address is not already available in the local cache, router, or ISP)._
+  _2. Then it makes a request to the server at the IP address to get the requested content. The request contains headers (re: the browser, preferred language, cookies, etc.)_
+  _3. The server responds, usually with HTML, and a status code (which is 200 if successful)_
+  \_4. The browser uses this information to build the DOM and make requests to get the other resources it needs, such as the images, CSS and JavaScript files, libraries, fonts, etc.
 
 ## Part Two: Practice Tools
 
